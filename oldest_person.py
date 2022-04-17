@@ -6,4 +6,9 @@ def oldest(people:dict):
     Returns:
         str: the name of the oldest person
     """
-    return
+    oldest_per=0;oldest_per_nam=''
+    for i,j in people.items():
+        if j>oldest_per:
+            oldest_per=j
+            oldest_per_nam=i
+    return oldest_per_nam
